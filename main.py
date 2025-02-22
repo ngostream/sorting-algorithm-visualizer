@@ -10,7 +10,7 @@ def main():
     print("2. Merge Sort")
     choice = int(input("Choose an algorithm (1/2): "))
     n = int(input("Enter the size of the array: "))
-    speed = float(input("Enter visualization speed (in seconds): "))
+    speed = float(input("Enter visualization speed (seconds): "))
     
     array = generate_array(n)
     if choice == 1:
@@ -18,7 +18,7 @@ def main():
     elif choice == 2:
         visualize_sorting(array, merge_sort, speed, "Merge Sort")
     else:
-        print("Invalid choice!")
+        print("invalid choice!")
 
 if __name__ == "__main__":
     main()
